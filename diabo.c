@@ -23,11 +23,12 @@ int main() {
     
     printf("Quantos contatos deseja cadastrar? ");
     scanf("%d", &n);
+    while (getchar() != '\n');
+    
     struct contato ListaDeContatos[n];
 
   for (i = 0; i < n; i++) {
         printf("\nCadastro do contato %d\n", i + 1);
-        while (getchar() != '\n');
         
     printf("Nome: ");
     fgets(ListaDeContatos[i].nome, sizeof(ListaDeContatos[i].nome), stdin);
