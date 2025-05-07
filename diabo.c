@@ -1,10 +1,10 @@
-#include <stdio.h>
-#include <string.h> 
+#include <stdio.h>            // MEIN CODE MEIN CODE //
+#include <string.h>           // MEIN CODE MEIN CODE //
 
 struct contato {
-    char nome [50];
-    char telefone [50];
-    char email [50];
+    char nome[100];
+    char telefone[100];
+    char email[100];
 };
 
 void MostrarContatos (struct contato lista [], int quantidade) {    
@@ -27,19 +27,19 @@ int main() {
 
   for (i = 0; i < n; i++) {
         printf("\nCadastro do contato %d\n", i + 1);
-        getchar();
+        while (getchar() != '\n');
         
     printf("Nome: ");
     fgets(ListaDeContatos[i].nome, sizeof(ListaDeContatos[i].nome), stdin);
     ListaDeContatos[i].nome[strcspn(ListaDeContatos[i].nome, "\n")] = 0;
     
     printf("Telefone: ");
-    fgets(ListaDeContatos[i].nome, sizeof(ListaDeContatos[i].nome), stdin);
-    ListaDeContatos[i].nome[strcspn(ListaDeContatos[i].telefone, "\n")] = 0;
+    fgets(ListaDeContatos[i].telefone, sizeof(ListaDeContatos[i].telefone), stdin);
+    ListaDeContatos[i].telefone[strcspn(ListaDeContatos[i].telefone, "\n")] = 0;
     
     printf("Email: ");
-    fgets(ListaDeContatos[i].nome, sizeof(ListaDeContatos[i].nome), stdin);
-    ListaDeContatos[i].nome[strcspn(ListaDeContatos[i].email, "\n")] = 0;
+    fgets(ListaDeContatos[i].email, sizeof(ListaDeContatos[i].email), stdin);
+    ListaDeContatos[i].email[strcspn(ListaDeContatos[i].email, "\n")] = 0;
 
 }
 
