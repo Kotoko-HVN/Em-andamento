@@ -2,7 +2,7 @@
 #include <stdbool.h>
 #include <string.h>
 
-int cadeiras [3][5] { {1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15} };
+int matriz[3][5] = { {1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15} };
 
 
 int main () {
@@ -28,7 +28,7 @@ break;
     case 2: printf("teste2");
 
 break;
-    case 3: printf("===== CINEMAS SETREM =====");
+    case 3: printf("===== CINEMAS SETREM =====\n" "%d", matriz[1][3]);
 
 break;
     case 4: printf("teste4");
