@@ -2,9 +2,7 @@
 #include <stdbool.h>
 #include <string.h>
 
-bool A1, A2, A3, A4, A5; 
-bool B1, B2, B3, B4, B5;
-bool C1, C2, C3, C4, C5;
+int cadeiras [3][5] { {1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15} };
 
 
 int main () {
@@ -30,7 +28,7 @@ break;
     case 2: printf("teste2");
 
 break;
-    case 3: printf("===== CINEMAS SETREM ===== \n" "%d, A1" "%d, A2" "%d, A3" "%d, A4" "%d, A5\n" "B1 B2 B3 B4 B5\n" "C1 C2 C3 C4 C5\n");
+    case 3: printf("===== CINEMAS SETREM =====");
 
 break;
     case 4: printf("teste4");
