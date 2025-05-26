@@ -3,9 +3,9 @@
 #include <string.h>
 
 int matriz[3][5] = { 
-{1,2,3,4,5},
-{6,7,8,9,10},
-{11,12,13,14,15} 
+{0,0,0,0,0},
+{0,0,0,0,0},
+{0,0,0,0,0} 
     
 };
 
@@ -26,7 +26,7 @@ while   (menu = 1) {
         
 switch (opcao) {
     case 1: printf("Cadeiras disponiveis: ");
-    
+
 
 
 break;
@@ -39,7 +39,12 @@ break;
     case 4: printf("teste4");
 
 break;
-    case 5: printf("teste5");
+    case 0: return 0;
+
+break;
+
+default:
+    printf:("Digite uma opção válida.");
 
 break;
     };
